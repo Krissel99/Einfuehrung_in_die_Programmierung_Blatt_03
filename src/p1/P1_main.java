@@ -1,17 +1,22 @@
 package p1;
 
+import java.util.Scanner;
+
 public class P1_main {
     public static void main(String[] args) {
-        int[] wuerfel = {1, 2, 3, 4, 5, 6};
+        Scanner input = new Scanner(System.in);
+        System.out.print("Gib eine Zahl zwischen 1 und 6 ein: ");
+        int wuerfel=input.nextInt();
+        System.out.print("Du hast dich für " + wuerfel +" entschieden und hast ");
 
         if (wuerfel == 1 || wuerfel == 4) {
-            System.out.println("Gewonnen!");
+            System.out.println("gewonnen!");
         } else if (wuerfel == 2) {
-            System.out.println("Verloren :(");
+            System.out.println("leinder verloren :(");
         } else if (wuerfel == 5) {
-            System.out.println("Unentschieden");
+            System.out.println("unentschieden gespielt");
         } else {
-            System.out.println("Unbekannt");
+            System.out.println("ein unbekannts Ergebnis");
         }
     }
 }
