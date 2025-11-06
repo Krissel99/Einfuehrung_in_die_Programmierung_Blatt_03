@@ -2,8 +2,8 @@ package h3;
 
 public class H3_main {
     public static void main(String[] args) {
-        int max = 5, fix = 2, wartend = 2;
-        boolean istVoll;
+        int max = 7, fix = 2, wartend = 2;
+        boolean istVoll = false;
 
         if (fix < max && wartend > 0) {
             int a = max - fix;

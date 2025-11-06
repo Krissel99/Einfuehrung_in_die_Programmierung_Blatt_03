@@ -5,7 +5,7 @@ public class H1_main {
 
         double guthaben = -100, monEingang = 200;
         int rating = -2;
-        boolean warnhinweis, negativ;
+        boolean warnhinweis = false, negativ = true;
 
         if (guthaben < 0) {
             negativ = true;
